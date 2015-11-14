@@ -1,0 +1,49 @@
+name:
+    ml
+version:
+    0.1.0.0
+-- synopsis:            
+-- description:         
+license:
+    BSD3
+license-file:
+    LICENSE
+author:
+    Joe Vargas
+maintainer:
+    https://github.com/jxv/ml-hs
+copyright:
+    2015
+category:
+    Numeric
+build-type:
+    Simple
+extra-source-files:
+    README.md
+cabal-version:
+    >=1.10
+
+library
+    exposed-modules:
+        ML,
+        ML.Num,
+        ML.V2,
+        ML.V3,
+        ML.V4,
+        ML.M4,
+        ML.M2,
+        ML.M3,
+        ML.Q
+    -- other-modules:       
+    other-extensions:
+        CPP,
+        ForeignFunctionInterface,
+        GeneralizedNewtypeDeriving
+    build-depends:
+        base >=4.8 && <4.9
+    hs-source-dirs:
+        src
+    build-tools:
+        hsc2hs
+    default-language:
+        Haskell2010
